@@ -24,7 +24,7 @@
 				<div class="nav-links" id="navLinks">
 				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
-					<li><a href="">HOME</a></li>
+					<li><a href="index.php">HOME</a></li>
 					<li><a href="">NOVEL</a></li>
 					<li><a href="">GENRE</a></li>
 					<li><a href="">POPULAR</a></li>

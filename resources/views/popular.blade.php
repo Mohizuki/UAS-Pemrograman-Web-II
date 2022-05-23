@@ -24,11 +24,11 @@
 				<div class="nav-links" id="navLinks">
 				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
-					<li><a href="index.php">HOME</a></li>
-					<li><a href="">NOVEL</a></li>
-					<li><a href="">GENRE</a></li>
-					<li><a href="">POPULAR</a></li>
-					<li><a href="">ABOUT</a></li>
+					<li><a href="./">HOME</a></li>
+					<li><a href="novel">NOVEL</a></li>
+					<li><a href="genre">GENRE</a></li>
+					<li><a href="popular">POPULAR</a></li>
+					<li><a href="about">ABOUT</a></li>
 				</ul>
 				</div>	
 				<i class="fa fa-bars" onclick="showMenu()"></i>		
@@ -43,59 +43,47 @@
 				</form>
 			</div>
 		</div>
+		<div class="login">
+				<a href="login.html"><img src="images/personlogin.png" alt=""></a>
+			</div>
 	<div class="text-box">
-	  <h1>About us</h1>
+		<h1>Popular</h1>
+	  <p>Find yourself most popular novels that might be your likey</p>
 	</div>
 	</section>
 	</header>
-	
+
 <!---- bawahcon section / content 2---->	
 <section class="bawahcon">
-	<h1>Contributor</h1>
+	<h1>Popular Novels</h1>
 	<p>Most viewed novels for weeks</p>
 	<div class="row">
-		<div class="bawahcon2-col">
-			<img class="con1" src="images/contact1.png" alt="">
-			<div class="layer2">
+		<div class="bawahcon-col">
+			<img src="images/cover1.jpg" alt="" style="margin-top: 200px;">
+			<div class="layer" style="margin-top: 200px;">
+				<h3><p style="font-size: 100px; color: silver">No.2</p><br>Shuumatsu Nani Shitemasu ka? Iden: Leila Asprey</h3>
 			</div>
 		</div>
-		<div class="bawahcon2-col">
-			<img src="images/contact2.png" alt="">
-			<div class="layer2">
+		<div class="bawahcon-col">
+			<img src="images/cover2.jpg" alt="" style="border-radius: 10px;">
+			<div class="layerpop">
+				<h3><p style="font-size: 100px; color: gold">No.1</p><br>Shuumatsu Nani Shitemasu ka? Mou Ichido dake, Aemasu ka?</h3>
+			</div>
+		</div>
+		<div class="bawahcon-col">
+			<img src="images/cover3.jpg" alt="" style="margin-top: 200px;">
+			<div class="layer" style="margin-top: 200px;">
+				<h3><p style="font-size: 100px; color: #B87333;">No.3</p><br>Shuumatsu Nani Shitemasu ka? Mou Ichido dake, Aemasu ka?</h3>
 			</div>
 		</div>
 	</div>
 </section>	
-	
-<!---- bawah lagi / content 3----->	
-<section class="bawahlagi">
-	<h1>Another Novels</h1>
-	<p>more novels that are available</p>
-	
-	<div class="row">
-		<div class="bawahlagi-col">
-			<img src="images/cover4.jpg" alt="">
-			<h3>“Shuumatsu Nani Shitemasu ka?” series of books.d</h3>
-			<p>Sukasuka Vol. EX officially on June 2020.</p>
-		</div>
-		<div class="bawahlagi-col">
-			<img src="images/cover5.jpg" alt="">
-			<h3>“Shuumatsu Nani Shitemasu ka?” series of books.</h3>
-			<p>Specifically, this is a story about an incident in spring. It dates back to the year of 415 in the common calendar of Regul Aire, almost 30 years before Feodor Jessman would meet four certain Leprechaun girls.</p>
-		</div>
-		<div class="bawahlagi-col">
-			<img src="images/cover6.jpg" alt="">
-			<h3>“Shuumatsu Nani Shitemasu ka?” series of books.</h3>
-			<p>[Sukamoka Vol. 4] A Self-Indulgent Fantasy</p>
-		</div>
-	</div>
-</section>
 
 <!----- promoteabout ----->	
 	
 <section class="promoteabout">
 	<h1>Please if you want to know more about us</h1>
-	<a href="" class="hero-btn">ABOUT US</a>
+	<a href="about.html" class="hero-btn">ABOUT US</a>
 </section>
 	
 <!----- footer ----->	
@@ -110,7 +98,9 @@
 	</div>
 	<p>Made with <i class="fa fa-heart-o"></i> tears ;-;</p>
 </section>
+
 <!------JavaScript for Toggle Menu----->
+
 <script>
 	var navLinks = document.getElementById("navLinks");
 	function showMenu(){
@@ -120,6 +110,5 @@
 		navLinks.style.right = "-155px";
 	}
 </script>
-
 </body>
 </html>

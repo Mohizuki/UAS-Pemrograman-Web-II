@@ -16,7 +16,7 @@
 	<section class="header">
 		<!---- header left ---->
 		<div class="headerleft">
-			<a href="index.html"><img src="images/crunchiilogo.gif"></a>
+			<a href="index.html"><img src="images/crunchiilogo.gif" alt=""></a>
 		</div>
 		<!---- header menu ---->
 		<div class="headermenu">
@@ -24,14 +24,14 @@
 				<div class="nav-links" id="navLinks">
 				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
-					<li><a href="">HOME</a></li>
-					<li><a href="">NOVEL</a></li>
-					<li><a href="">GENRE</a></li>
-					<li><a href="">POPULAR</a></li>
-					<li><a href="about.php">ABOUT</a></li>
+					<li><a href="./">HOME</a></li>
+					<li><a href="novel">NOVEL</a></li>
+					<li><a href="genre">GENRE</a></li>
+					<li><a href="popular">POPULAR</a></li>
+					<li><a href="about">ABOUT</a></li>
 				</ul>
 				</div>	
-				<i class="fa fa-bars" onclick="showMenu()"></i>		
+				<i class="fa fa-bars" onclick="showMenu()"></i>	
 			</nav>
 		</div>
 		<!---- header right ---->
@@ -44,14 +44,14 @@
 			</div>
 		</div>
 		<div class="login">
-				<a href="index.html"><img src="images/personlogin.png"></a>
+				<a href="login.html"><img src="images/personlogin.png" alt=""></a>
 			</div>
 	<div class="text-box">
 		<h1>くるんちい - Cruncii</h1>
 	  <p>A personal novel website<br>There are 3 pages at the moment you can try all of those</p>
-		<a href="" class="hero-btn">Novel</a>
-		<a href="" class="hero-btn">Genre</a>
-		<a href="" class="hero-btn">Popular</a>
+		<a href="novel" class="hero-btn">Novel</a>
+		<a href="genre" class="hero-btn">Genre</a>
+		<a href="popular" class="hero-btn">Popular</a>
 	</div>
 	</section>
 	</header>
@@ -84,19 +84,19 @@
 	<p>Most viewed novels for weeks</p>
 	<div class="row">
 		<div class="bawahcon-col">
-			<img src="images/cover1.jpg">
+			<img src="images/cover1.jpg" alt="">
 			<div class="layer">
 				<h3>Volume 1<br>Shuumatsu Nani Shitemasu ka? Iden: Leila Asprey</h3>
 			</div>
 		</div>
 		<div class="bawahcon-col">
-			<img src="images/cover2.jpg">
+			<img src="images/cover2.jpg" alt="">
 			<div class="layer">
 				<h3>Volume 1<br>Shuumatsu Nani Shitemasu ka? Mou Ichido dake, Aemasu ka?</h3>
 			</div>
 		</div>
 		<div class="bawahcon-col">
-			<img src="images/cover3.jpg">
+			<img src="images/cover3.jpg" alt="">
 			<div class="layer">
 				<h3>Volume 2<br>Shuumatsu Nani Shitemasu ka? Mou Ichido dake, Aemasu ka?</h3>
 			</div>
@@ -111,17 +111,17 @@
 	
 	<div class="row">
 		<div class="bawahlagi-col">
-			<img src="images/cover4.jpg" >
-			<h3>“Shuumatsu Nani Shitemasu ka?” series of books.d</h3>
+			<img src="images/cover4.jpg" alt="">
+			<h3>“Shuumatsu Nani Shitemasu ka?” series of books.</h3>
 			<p>Sukasuka Vol. EX officially on June 2020.</p>
 		</div>
 		<div class="bawahlagi-col">
-			<img src="images/cover5.jpg">
+			<img src="images/cover5.jpg" alt="">
 			<h3>“Shuumatsu Nani Shitemasu ka?” series of books.</h3>
 			<p>Specifically, this is a story about an incident in spring. It dates back to the year of 415 in the common calendar of Regul Aire, almost 30 years before Feodor Jessman would meet four certain Leprechaun girls.</p>
 		</div>
 		<div class="bawahlagi-col">
-			<img src="images/cover6.jpg">
+			<img src="images/cover6.jpg" alt="">
 			<h3>“Shuumatsu Nani Shitemasu ka?” series of books.</h3>
 			<p>[Sukamoka Vol. 4] A Self-Indulgent Fantasy</p>
 		</div>
@@ -132,7 +132,7 @@
 	
 <section class="promoteabout">
 	<h1>Please if you want to know more about us</h1>
-	<a href="" class="hero-btn">ABOUT US</a>
+	<a href="about" class="hero-btn">ABOUT US</a>
 </section>
 	
 <!----- footer ----->	
@@ -147,7 +147,9 @@
 	</div>
 	<p>Made with <i class="fa fa-heart-o"></i> tears ;-;</p>
 </section>
+
 <!------JavaScript for Toggle Menu----->
+
 <script>
 	var navLinks = document.getElementById("navLinks");
 	function showMenu(){

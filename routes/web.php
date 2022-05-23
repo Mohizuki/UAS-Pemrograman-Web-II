@@ -16,3 +16,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/novel', function () {
+    return view('novel');
+});
+
+Route::get('/genre', function () {
+    return view('genre');
+});
+
+Route::get('/genre/action', function () {
+    return view('/genre/action');
+});
+
+Route::get('/popular', function () {
+    return view('popular');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});

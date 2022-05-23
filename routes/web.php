@@ -28,6 +28,21 @@ Route::get('/genre', function () {
 Route::get('/genre/action', function () {
     return view('/genre/action');
 });
+Route::get('/genre/adventure', function () {
+    return view('/genre/adventure');
+});
+Route::get('/genre/drama', function () {
+    return view('/genre/drama');
+});
+Route::get('/genre/fantasy', function () {
+    return view('/genre/fantasy');
+});
+Route::get('/genre/romance', function () {
+    return view('/genre/romance');
+});
+Route::get('/genre/sci-fi', function () {
+    return view('/genre/sci-fi');
+});
 
 Route::get('/popular', function () {
     return view('popular');

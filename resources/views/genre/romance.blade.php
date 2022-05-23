@@ -24,11 +24,11 @@
 				<div class="nav-links" id="navLinks">
 				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
-					<li><a href="../index.html">HOME</a></li>
-					<li><a href="">NOVEL</a></li>
-					<li><a href="../genre.html">GENRE</a></li>
-					<li><a href="../popular.html">POPULAR</a></li>
-					<li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../">HOME</a></li>
+					<li><a href="../novel">NOVEL</a></li>
+					<li><a href="../genre">GENRE</a></li>
+					<li><a href="../popular">POPULAR</a></li>
+					<li><a href="../about">ABOUT</a></li>
 				</ul>
 				</div>	
 				<i class="fa fa-bars" onclick="showMenu()"></i>	

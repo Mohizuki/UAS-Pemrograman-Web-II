@@ -663,9 +663,7 @@ p{
 	border-style: solid;
 	border-radius: 0.4em;
 }
-.descnov h3{
-	
-}
+
 .delbutdiv {
 	width: 7%;
 	text-align: right;
@@ -702,8 +700,6 @@ p{
 .delbutap:focus {
 	background-color: #F082AC;
 }
-
-
 
 /* popular */
 .layerpop {

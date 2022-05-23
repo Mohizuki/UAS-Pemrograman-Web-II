@@ -44,7 +44,7 @@
 			</div>
 		</div>
 		<div class="login">
-				<a href="login.html"><img src="images/personlogin.png" alt=""></a>
+				<a href="login"><img src="images/personlogin.png" alt=""></a>
 			</div>
 <div class="text-box">
 	  <h1>About us</h1>

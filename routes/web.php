@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Novelcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +25,28 @@ Route::get('/novel', function () {
 Route::get('/genre', function () {
     return view('genre');
 });
+Route::get('/popular', function () {
+    return view('popular');
+});
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+
+// CRUD //
+
+Route::get('/genre/create', function () {
+    return view('/genre/create');
+});
+
+
+
+// Genre //
 Route::get('/genre/action', function () {
     return view('/genre/action');
 });
@@ -44,14 +66,7 @@ Route::get('/genre/sci-fi', function () {
     return view('/genre/sci-fi');
 });
 
-Route::get('/popular', function () {
-    return view('popular');
-});
 
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/login', function () {
-    return view('login');
-});
+// Controller //
+Route::resource('novel', Novelcontroller::class);
+Route::resource('novelmodel', Novelcontroller::class);

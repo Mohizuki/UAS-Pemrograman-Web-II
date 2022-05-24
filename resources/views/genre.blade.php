@@ -3,7 +3,7 @@
 
 @section('content2')
 	<div class="course-col">
-		<a href="genre/fantasy.html" style="color:black;text-decoration: none; background-color: none;">
+		<a href="genre/fantasy" style="color:black;text-decoration: none; background-color: none;">
 		<div class="imagegenre">
 		<img src="images/s1.jpg" alt="" style="position: absolute; width: 357px; margin-top: 1px;">
 		<img src="images/cloud2.gif" alt="" style="opacity: 0.5; margin: auto;">
@@ -27,7 +27,7 @@
 		<p>Exciting action sequences take priority and significant conflicts between characters are usually resolved with one's physical power.</p>
 	</div>
 	<div class="course-col">
-		<a href="genre/drama.html" style="color:black;text-decoration: none; background-color: none;">
+		<a href="genre/drama" style="color:black;text-decoration: none; background-color: none;">
 		<div class="imagegenre">
 		<img src="images/s3.jpg" alt="" style="position: absolute; width: 357px; margin-top: 1px;">
 		<img src="images/cloud2.gif" alt="" style="opacity: 0.5; margin: auto;">
@@ -39,7 +39,7 @@
 		<p>Plot-driven stories focused on realistic characters experiencing human struggle.</p>
 	</div>
 	<div class="course-col">
-		<a href="genre/sci-fi.html" style="color:black;text-decoration: none; background-color: none;">
+		<a href="genre/sci-fi" style="color:black;text-decoration: none; background-color: none;">
 	  <div class="imagegenre">
 		<img src="images/s1.jpg" alt="" style="position: absolute; width: 357px; margin-top: 1.7px;">
 		<img class="toplayer" src="images/cloud2.gif" alt="" style="opacity: 0.5;">
@@ -51,7 +51,7 @@
 		<p>Imagined technological advancements settings which are currently unreal in the present day but could be invented by future's science.</p>
 	</div>
 	<div class="course-col">
-		<a href="genre/romance.html" style="color:black;text-decoration: none; background-color: none;">
+		<a href="genre/romance" style="color:black;text-decoration: none; background-color: none;">
 		<div class="imagegenre">
 		<img src="images/s2.jpg" alt="" style="position: absolute; width: 357px; margin-top: 1px;">
 		<img src="images/cloud2.gif" alt="" style="opacity: 0.5; margin: auto;">
@@ -63,7 +63,7 @@
 		<p>Falling in love and struggling to progress towards—or maintain—a romantic relationship take priority...</p>
 	</div>
 	<div class="course-col">
-		<a href="genre/adventure.html" style="color:black;text-decoration: none; background-color: none;">
+		<a href="genre/adventure" style="color:black;text-decoration: none; background-color: none;">
 		<div class="imagegenre">
 		<img src="images/s3.jpg" alt="" style="position: absolute; width: 357px; margin-top: 1px;">
 		<img src="images/cloud2.gif" alt="" style="opacity: 0.5; margin: auto;">

@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+	overflow: hidden;
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+section{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: url("images/background1.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+.form-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: linear-gradient(148deg, #c6dff7, #1e7dd6);
+	width: 700px;
+	padding: 50px 30px;
+	border-radius: 20px;
+	box-shadow: 13px 13px 50px #0d3754, -13px 13px 50px #64b3f4;
+	
+}
+.logoform {
+	height: 100px;
+	margin: 0 auto;
+}
+label {
+	text-shadow: 0.7px 0px 1px black; 
+}
+
+h1{
+	text-shadow: 0.7px 0px 1px black; 
+	font-weight: 100;
+	font-size: 2em;
+	text-align: center;
+	margin: 10px 0 1em 0;
+}
+
+.checkboxlist{
+	display: flex;
+}
+.checklist {
+	padding-right: 10px;
+}
+input[type="checkbox"]{
+	position: relative;
+	width: 40px;
+	height: 20px;
+	-webkit-appearance: none;
+	background: #c6c6c6;
+	outline: none;
+	border-radius: 10px;
+	box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+	transition: .5s;
+}
+
+input:checked[type="checkbox"]{
+	background: #00de0b;
+}
+input[type="checkbox"]:before{
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	top: 0;
+	left: 0;
+	background: #fff;
+	transform: scale(1.1);
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	transition: .5s;
+}
+input:checked[type="checkbox"]:before{
+	left: 20px;
+	
+}
+
+.descrip input{
+	height: 150px;
+}
+
+.control input{
+	width: 100%;
+	display: block;
+	padding: 10px;
+	color: #222;
+	border: none;
+	outline: none;
+	margin: 1em 0;
+	border-radius: 15px;
+}
+
+.control input[type="submit"]{
+	background: crimson;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	opacity: .7;
+	transition: opacity .3s ease;
+}
+
+.control input[type="submit"]:hover{
+	opacity: 1;
+}

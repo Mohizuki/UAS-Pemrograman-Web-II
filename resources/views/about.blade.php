@@ -16,7 +16,7 @@
 	<section class="header">
 		<!---- header left ---->
 		<div class="headerleft">
-			<a href="index.html"><img src="images/crunchiilogo.gif" alt=""></a>
+			<a href="./"><img src="images/crunchiilogo.gif" alt=""></a>
 		</div>
 		<!---- header menu ---->
 		<div class="headermenu">

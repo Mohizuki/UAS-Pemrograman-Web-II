@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/', [Novelcontroller::class, 'welcome']);
+
+
+
 Route::get('/novel', function () {
     return view('novel');
 });
@@ -70,3 +74,5 @@ Route::get('/genre/sci-fi', function () {
 // Controller //
 Route::resource('novel', Novelcontroller::class);
 Route::resource('novelmodel', Novelcontroller::class);
+
+

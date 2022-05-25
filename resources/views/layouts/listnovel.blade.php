@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	@yield('style')
 </head>
 <body>
@@ -17,7 +18,7 @@
 	<section class="header">
 		<!---- header left ---->
 		<div class="headerleft">
-			<a href="index.html"><img src="images/crunchiilogo.gif" alt=""></a>
+			<a href="./"><img src="images/crunchiilogo.gif" alt=""></a>
 		</div>
 		<!---- header menu ---->
 		<div class="headermenu">
@@ -39,7 +40,7 @@
 		<div class="headerright">
 			<div class="searchbutton">
 				<form action="https://www.google.com/search" method="get" class="search-bar">
-					<input type="text" placeholder="Search novel" name="s">
+					<input type="text" placeholder="Search novel" name="">
 					<button type="submit"><img src="images/search.png" alt=""></button>
 				</form>
 			</div>

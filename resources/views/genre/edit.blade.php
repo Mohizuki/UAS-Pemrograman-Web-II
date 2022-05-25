@@ -15,11 +15,12 @@
 <section>
 	<div class="form-container">
 		<h1>Insert Novel</h1>
-		<form action="{{ url('novel') }}" method="POST">
+		<form action="{{ url('novel/'.$model->novelid) }}" method="POST">
             @csrf
+            <input type="hidden" name="_method" value="PATCH">
 			<div class="control">
-				<label for="judul">Novel's Name</label>
-				<input type="text" name="judul" id="judul">
+				<label for="namenov">Novel's Name</label>
+				<input type="text" name="judul" id="namenov">
 			</div>
 			<div class="checkboxlist">
 			  <div class="checklist">

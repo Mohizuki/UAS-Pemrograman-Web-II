@@ -85,6 +85,7 @@
 		</div>
 		<div class="delbutdiv">
 			<button class="delbutap">Delete</button>
+			<a href="{{ url('novel/'.$value->novelid.'/edit') }}"><button type="button" class="btn btn-info">Update</button></a>
 		</div>
 	</div>
 	@endforeach

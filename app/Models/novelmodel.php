@@ -10,4 +10,10 @@ class novelmodel extends Model
     use HasFactory;
     //pegawais
     protected $table = "detailnovel";
+
+    protected $fillable = [
+        'judul',
+        'genre',
+        'desc_novel',
+    ];
 }

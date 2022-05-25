@@ -37,12 +37,15 @@ class Novelcontroller extends Controller
      */
     public function store(Request $request)
     {
+        novelmodel::create($request->all());    
+
+
         $model = new novelmodel;
         $model->judul = $request->judul;
         $model->genre = $request->genre;
         $model->desc_novel = $request->desc_novel;
         $model->save();
-
+        
         return redirect('novel');
     }
 
@@ -63,9 +66,9 @@ class Novelcontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($novelid)
+    public function edit($id)
     {
-        $model = novelmodel::find($novelid);
+        $model = novelmodel::find($id);
         return view('genre.edit', compact('model'));
     }
 
@@ -78,7 +81,10 @@ class Novelcontroller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $model = novelmodel::find($id);
+
+        $model->update($request->all());
+        return redirect('novel');
     }
 
     /**
@@ -87,8 +93,12 @@ class Novelcontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete($id)
     {
-        //
+        //novelmodel::destroy($id);
+        $model = novelmodel::find($id);
+        $model->delete();
+
+        return redirect('novel');
     }
 }

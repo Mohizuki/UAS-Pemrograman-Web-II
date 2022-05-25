@@ -15,7 +15,7 @@
 <section>
 	<div class="form-container">
 		<h1>Insert Novel</h1>
-		<form action="{{ url('novel') }}" method="POST">
+		<form action="{{ route('store-genre') }}" method="POST">
             @csrf
 			<div class="control">
 				<label for="judul">Novel's Name</label>
@@ -44,14 +44,15 @@
 				</div>
 			</div>
 			<div class="control descrip">
-				<label for="desc">Description</label>
-				<input type="text" name="desc_novel" id="desc">
+				<label for="desc_novel">Description</label>
+				<input type="text" name="desc_novel" id="desc_novel">
 			</div>
 			<div class="form-group">
     			<input type="file" class="form-control-file" id="exampleFormControlFile1">
   			</div>
 			<div class="control">
 				<input type="submit" value="submit">
+				<input type="submit" value="back" style="float: right; width:20%;" href="">
 			</div>
 		</form>
 	</div>

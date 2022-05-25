@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Create Novel</title>
-	<link rel="stylesheet" href="../crud.css">
+	<title>Edit Novel</title>
+	<link rel="stylesheet" href="../../crud.css">
 	<link rel="shortcut icon" type="image/icon" href="images/crunchiitopicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +14,13 @@
 <body>
 <section>
 	<div class="form-container">
-		<h1>Insert Novel</h1>
-		<form action="{{ url('novel/'.$model->novelid) }}" method="POST">
+		<h1>Edit Novel</h1>
+		<form action="{{ route('update-genre', $model->id) }}" method="POST">
             @csrf
-            <input type="hidden" name="_method" value="PATCH">
+			@method('PUT')
 			<div class="control">
-				<label for="namenov">Novel's Name</label>
-				<input type="text" name="judul" id="namenov">
+				<label for="judul">Novel's Name</label>
+				<input type="text" name="judul" id="judul" value="{{ $model->judul }}">
 			</div>
 			<div class="checkboxlist">
 			  <div class="checklist">
@@ -45,15 +45,17 @@
 				</div>
 			</div>
 			<div class="control descrip">
-				<label for="desc">Description</label>
-				<input type="text" name="desc_novel" id="desc">
+				<label for="desc_novel">Description</label>
+				<input type="text" name="desc_novel" id="desc_novel" value="{{ $model->desc_novel }}">
 			</div>
 			<div class="form-group">
     			<input type="file" class="form-control-file" id="exampleFormControlFile1">
   			</div>
 			<div class="control">
 				<input type="submit" value="submit">
+				<input type="submit" value="back" style="float: right; width:20%;" href="">
 			</div>
+		</form>
 		</form>
 	</div>
 </section>	

@@ -3,7 +3,7 @@
 @section('content')
     <br/>
     <div class="crudbutton">
-		<a href="genre/create"><button class="create">Create</button></a>
+		<a href="{{ route('create-genre') }}"><button class="create">Create</button></a>
         <button class="remove" onclick="deleteFunction()">Remove</button>
 	</div>
 	<div class="novellist">
@@ -84,8 +84,12 @@
 			</div>
 		</div>
 		<div class="delbutdiv">
-			<button class="delbutap">Delete</button>
-			<a href="{{ url('novel/'.$value->novelid.'/edit') }}"><button type="button" class="btn btn-info">Update</button></a>
+			<form action="{{ route('delete-genre', $value->id) }}" method="post">
+				@csrf
+				@method('DELETE')
+			<button class="delbutap" onclick="return confirm('Are you sure you want to delete this novel ?');">Delete</button>
+			</form>
+			<a href="{{ route('edit-genre', $value->id) }}"><button type="button" class="btn btn-info">Update</button></a>
 		</div>
 	</div>
 	@endforeach

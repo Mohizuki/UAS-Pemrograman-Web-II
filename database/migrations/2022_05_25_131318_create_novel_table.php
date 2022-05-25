@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('detailnovel', function (Blueprint $table) {
-            $table->novelid();
+            $table->id();
             $table->string('judul');
             $table->string('genre');
             $table->string('desc_novel');

@@ -18,8 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', [Novelcontroller::class, 'welcome']);
-
 
 
 Route::get('/novel', function () {

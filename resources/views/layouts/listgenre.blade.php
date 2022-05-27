@@ -10,14 +10,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    
+</head>
 </head>
 <body>
 	<header>
 	<section class="header">
 		<!---- header left ---->
 		<div class="headerleft">
-			<a href="index.html"><img src="images/crunchiilogo.gif" alt=""></a>
+			<a href="./"><img src="images/crunchiilogo.gif" alt=""></a>
 		</div>
 		<!---- header menu ---->
 		<div class="headermenu">
@@ -25,14 +25,14 @@
 				<div class="nav-links" id="navLinks">
 				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
-                    <li><a href="./">HOME</a></li>
+					<li><a href="./">HOME</a></li>
 					<li><a href="novel">NOVEL</a></li>
 					<li><a href="genre">GENRE</a></li>
 					<li><a href="popular">POPULAR</a></li>
 					<li><a href="about">ABOUT</a></li>
 				</ul>
 				</div>	
-				<i class="fa fa-bars" onclick="showMenu()"></i>		
+				<i class="fa fa-bars" onclick="showMenu()"></i>	
 			</nav>
 		</div>
 		<!---- header right ---->
@@ -45,11 +45,11 @@
 			</div>
 		</div>
 		<div class="login">
-				<a href="login"><img src="images/personlogin.png" alt=""></a>
-			</div>
+			<a href="login"><img src="images/personlogin.png" alt=""></a>
+		</div>
 	<div class="text-box">
 		<h1>Genres</h1>
-	  <p>Find yourself your fitted genre for novels</p>
+	  	<p>Find yourself your fitted genre for novels</p>
 	</div>
 	</section>
 	</header>

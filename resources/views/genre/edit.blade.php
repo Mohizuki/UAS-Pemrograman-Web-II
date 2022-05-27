@@ -24,23 +24,23 @@
 			</div>
 			<div class="checkboxlist">
 			  <div class="checklist">
-  					<input class="fantasycheck" type="checkbox" id="flexCheckDefault" value="fantasycheck">
+  					<input class="fantasycheck" type="checkbox" id="fantasycheck" value="fantasycheck" name="genre[]">
   					<label class="fantasycheck" for="Fantasycheck">Fantasy</label>
 				</div>
 			  <div class="checklist">
-					<input class="actioncheck" type="checkbox" id="actioncheck" value="actioncheck">
+					<input class="actioncheck" type="checkbox" id="actioncheck" value="actioncheck" name="genre[]">
 					<label class="actioncheck" for="actioncheck">Action</label>
 				</div>
 			  <div class="checklist">
-					<input class="dramacheck" type="checkbox" id="dramacheck" value="dramacheck">
+					<input class="dramacheck" type="checkbox" id="dramacheck" value="dramacheck" name="genre[]">
 					<label class="dramacheck" for="dramacheck">Drama</label>
 				</div>
 			  <div class="checklist">
-  					<input class="scificheck" type="checkbox" id="scificheck" value="scificheck">
+  					<input class="scificheck" type="checkbox" id="scificheck" value="scificheck" name="genre[]">
   					<label class="scificheck" for="scificheck">Sci-fi</label>
 				</div>
 			  <div class="checklist">
-					<input class="romcheck" type="checkbox" id="romcheck" value="romcheck">
+					<input class="romcheck" type="checkbox" id="romcheck" value="romcheck" name="genre[]">
 					<label class="romcheck" for="romcheck">Romance</label>
 				</div>
 			</div>

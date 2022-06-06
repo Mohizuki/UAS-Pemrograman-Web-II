@@ -26,7 +26,7 @@
 				<ul>
                     <li><a href="../">HOME</a></li>
 					<li><a href="../novel">NOVEL</a></li>
-					<li><a href="../genre">GENRE</a></li>
+					<li><a href="../genres">GENRE</a></li>
 					<li><a href="../popular">POPULAR</a></li>
 					<li><a href="../about">ABOUT</a></li>
 				</ul>
@@ -44,8 +44,8 @@
 			</div>
 		</div>
 		<div class="login">
-				<a href="../login.html"><img src="../images/personlogin.png" alt=""></a>
-			</div>
+			<a href="../profile"><img src="../images/santa.png" alt=""></a>
+		</div>
 	<div class="text-box">
 		<h1>Adventure Genre</h1>
 	  <p>Whether aiming for a specific goal or just struggling to survive,<br> the main character is thrust into unfamiliar situations or lands and continuously faces unexpected dangers.</p>

@@ -24,6 +24,7 @@
 		</div>
 		<div class="delbutdiv">
 			<button class="delbutap">Delete</button>
+			<button type="button" class="btn btn-info">Update</button>
 		</div>
 	</div>
 	<div class="novellist">
@@ -44,6 +45,7 @@
 		</div>
 		<div class="delbutdiv">
 			<button class="delbutap">Delete</button>
+			<button type="button" class="btn btn-info">Update</button>
 		</div>
 	</div>
 	<div class="novellist">
@@ -64,6 +66,7 @@
 		</div>
 		<div class="delbutdiv">
 			<button class="delbutap">Delete</button>
+			<button type="button" class="btn btn-info">Update</button>
 		</div>
 	</div>
 	@foreach($datas as $value)
@@ -76,8 +79,15 @@
 				<h1>{{ $value['judul'] }}</h1>
 			</div>
 			<div class="gennov">
-				<h2>{{ $value['genre'] }}</h2>
-				<h2>Fantasy</h2>
+				@if($value->genre == null)
+					<p></p>
+					@else
+
+					@foreach($value->genre as $genrelist)
+					<h2>{{ $genrelist }}</h2>
+					@endforeach
+
+        		@endif
 			</div>
 			<div class="descnov">
 				<h3>{{ $value['desc_novel'] }}</h3>

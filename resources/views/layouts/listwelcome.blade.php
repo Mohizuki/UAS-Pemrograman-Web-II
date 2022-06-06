@@ -26,7 +26,7 @@
 				<ul>
 					<li><a href="./">HOME</a></li>
 					<li><a href="novel">NOVEL</a></li>
-					<li><a href="genre">GENRE</a></li>
+					<li><a href="genres">GENRE</a></li>
 					<li><a href="popular">POPULAR</a></li>
 					<li><a href="about">ABOUT</a></li>
 				</ul>
@@ -44,13 +44,13 @@
 			</div>
 		</div>
 		<div class="login">
-				<a href="login"><img src="images/personlogin.png" alt=""></a>
-			</div>
+			<a href="profile"><img src="images/santa.png" alt=""></a>
+		</div>
 	<div class="text-box">
-		<h1>くるんちい - Cruncii</h1>
+		<h1>Welcome, {{session('user')}}</h1>
 	  <p>A personal novel website<br>There are 3 pages at the moment you can try all of those</p>
 		<a href="novel" class="hero-btn">Novel</a>
-		<a href="genre" class="hero-btn">Genre</a>
+		<a href="genres" class="hero-btn">Genre</a>
 		<a href="popular" class="hero-btn">Popular</a>
 	</div>
 	</section>

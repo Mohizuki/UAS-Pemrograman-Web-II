@@ -26,7 +26,7 @@
 				<ul>
                     <li><a href="../">HOME</a></li>
 					<li><a href="../novel">NOVEL</a></li>
-					<li><a href="../genre">GENRE</a></li>
+					<li><a href="../genres">GENRE</a></li>
 					<li><a href="../popular">POPULAR</a></li>
 					<li><a href="../about">ABOUT</a></li>
 				</ul>
@@ -44,8 +44,8 @@
 			</div>
 		</div>
 		<div class="login">
-				<a href="../login.html"><img src="../images/personlogin.png" alt=""></a>
-			</div>
+			<a href="../profile"><img src="../images/santa.png" alt=""></a>
+		</div>
 	<div class="text-box">
 		<h1>Romance Genre</h1>
 	  <p>Falling in love and struggling to progress towards—or maintain—a romantic relationship take priority,<br> while other subplots either take backseat or are designed to develop the main love story.</p>

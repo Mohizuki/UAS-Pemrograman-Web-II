@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('detailnovel', function (Blueprint $table) {
+        Schema::table('listgenres', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->json('genre')->nullable();
-            $table->string('desc_novel');
+            $table->foreginId('gambar_id')->nullable()->after('id');
+            $table->string('genrename');
+            $table->string('caption');
             $table->timestamps();
         });
     }
@@ -29,6 +29,9 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('novel');
+        Schema::tabel('listgenres', function (Blueprint $table) {
+            $table->dropColumn('gambar_id');
+            $table->dropColumn('genrename_id');
+        });
     }
 };

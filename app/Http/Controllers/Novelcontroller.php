@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\novelmodel;
+use mysqli;
 
 class Novelcontroller extends Controller
 {
@@ -12,6 +13,8 @@ class Novelcontroller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
     public function index()
     {
         $datas = novelmodel::all();
@@ -39,13 +42,18 @@ class Novelcontroller extends Controller
     {
         novelmodel::create($request->all());    
 
-
         $model = new novelmodel;
         $model->judul = $request->judul;
-        $model->genre = $request->genre;
         $model->desc_novel = $request->desc_novel;
+        $model->genre = $request->genre;
+
+        //error_log(request('genre'));
+        //return request('genre');
         $model->save();
         
+        
+        
+
         return redirect('novel');
     }
 

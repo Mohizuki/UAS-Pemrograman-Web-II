@@ -26,7 +26,7 @@
 				<ul>
 					<li><a href="./">HOME</a></li>
 					<li><a href="novel">NOVEL</a></li>
-					<li><a href="genre">GENRE</a></li>
+					<li><a href="genres">GENRE</a></li>
 					<li><a href="popular">POPULAR</a></li>
 					<li><a href="about">ABOUT</a></li>
 				</ul>
@@ -44,8 +44,8 @@
 			</div>
 		</div>
 		<div class="login">
-				<a href="login"><img src="images/personlogin.png" alt=""></a>
-			</div>
+			<a href="profile"><img src="images/santa.png" alt=""></a>
+		</div>
 <div class="text-box">
 	  <h1>About us</h1>
 	</div>
@@ -77,36 +77,28 @@
 	<h1>Social Media</h1>
 	<div class="sosmed">
 		<div class="sosiconrow">
+			@foreach($medias as $sosmed)
 			<div class="sosicon">
-				<a href="https://www.instagram.com/crunchill/">
-				<i class="fa fa-github"> Mohizuki</i>
+				<a href="{{ $sosmed['medialink'] }}">
+				<i class="{{ $sosmed['logo'] }}"> Crunchii</i>
 				</a>
 			</div>
-			<div class="sosicon">
-				<a href="https://www.instagram.com/crunchill/">
-				<i class="fa fa-instagram"> Crunchill</i>
-				</a>
-			</div>
-			<div class="sosicon">
-				<a href="https://www.instagram.com/crunchill/">
-				<i class="fa fa-steam"> Mohizuki</i>
-				</a>
-			</div>
+			@endforeach
 		</div>
 		<div class="sosicon2row">
 			<div class="sosicon2">
-				<a href="https://www.instagram.com/crunchill/">
-				<i class="fa fa-github"> Mohizuki</i>
+				<a href="https://github.com/TsuguHatoba">
+				<i class="fa fa-github"> Tsugu</i>
 				</a>
 			</div>
 			<div class="sosicon2">
-				<a href="https://www.instagram.com/crunchill/">
-				<i class="fa fa-instagram"> Crunchill</i>
+				<a href="https://www.instagram.com/just_roryy/">
+				<i class="fa fa-instagram"> Rory</i>
 				</a>
 			</div>
 			<div class="sosicon2">
-				<a href="https://www.instagram.com/crunchill/">
-				<i class="fa fa-steam"> Mohizuki</i>
+				<a href="https://steamcommunity.com/id/KumaBearYuna/">
+				<i class="fa fa-steam"> Yuna</i>
 				</a>
 			</div>
 		</div>

@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,25 +24,23 @@
 				<input type="text" name="judul" id="judul">
 			</div>
 			<div class="checkboxlist">
-			  <div class="checklist">
-  					<input class="fantasycheck" type="checkbox" id="fantasycheck" value="fantasycheck" name="genre[]">
-  					<label class="fantasycheck" for="Fantasycheck">Fantasy</label>
-				</div>
-			  <div class="checklist">
-					<input class="actioncheck" type="checkbox" id="actioncheck" value="actioncheck" name="genre[]">
-					<label class="actioncheck" for="actioncheck">Action</label>
-				</div>
-			  <div class="checklist">
-					<input class="dramacheck" type="checkbox" id="dramacheck" value="dramacheck" name="genre[]">
-					<label class="dramacheck" for="dramacheck">Drama</label>
-				</div>
-			  <div class="checklist">
-  					<input class="scificheck" type="checkbox" id="scificheck" value="scificheck" name="genre[]">
-  					<label class="scificheck" for="scificheck">Sci-fi</label>
-				</div>
-			  <div class="checklist">
-					<input class="romcheck" type="checkbox" id="romcheck" value="romcheck" name="genre[]">
-					<label class="romcheck" for="romcheck">Romance</label>
+			  	<div class="checklist">
+  					<!-- <input class="fantasycheck" type="checkbox" id="fantasycheck" value="fantasycheck" name="genre[]">
+  					<label class="fantasycheck" for="Fantasycheck">Fantasy</label> -->
+					 <?php
+						$con = mysqli_connect("localhost","root","","db_novel");
+						$query = "SELECT * FROM detailgenre";
+						$query_run = mysqli_query($con, $query);
+
+						if(mysqli_num_rows($query_run) > 0){
+							foreach($query_run as $row){
+								?>
+									<input type="checkbox" value="<?php echo $row['genrename'];  ?>" name="genre[]">
+  									<label ><?php echo $row['genrename'];  ?></label>
+								<?php
+							}
+						}
+					?> 
 				</div>
 			</div>
 			<div class="control descrip">

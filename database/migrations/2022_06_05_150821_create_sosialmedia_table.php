@@ -13,11 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('detailnovel', function (Blueprint $table) {
+        Schema::create('sosialmedia', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->json('genre')->nullable();
-            $table->string('desc_novel');
+            $table->string('logo');
+            $table->string('medialink');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('novel');
+        Schema::dropIfExists('sosialmedia');
     }
 };

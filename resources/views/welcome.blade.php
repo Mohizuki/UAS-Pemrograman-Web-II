@@ -1,21 +1,14 @@
 @extends('layouts.listwelcome')
 
 @section('content1')
+	@foreach($secone as $secones)
 	<div class="course-col">
-		<h3>Shuumatsu Nani Shitemasu ka</h3>
-		<img src="images/s1.jpg" alt="">
-		<p>The story follows Willem Kmetsch, the last surviving human, 500 years after the end of the world at the hands...</p>
+		<h3>{{$secones['judul']}}</h3>
+		<img src="{{ $secones->gambar->gambar }}" alt="">
+		<p>{{$secones['caption']}}</p>
+		<p>{{$secones->detailgambar}}</p>
 	</div>
-	<div class="course-col">
-		<h3>Touhou fanfiction</h3>
-		<img src="images/s2.jpg" alt="">
-		<p>Touhou fiction, which includes both the original stories and the various fan works.</p>
-	</div>
-	<div class="course-col">
-		<h3>Fate Grand/Order fanfiction</h3>
-		<img src="images/s3.jpg" alt="">
-		<p>fate grand ordere fanfiction stories,  stories include: Grand Ancestral Bloodlines, ...</p>
-	</div>
+	@endforeach
 @endsection
 
 @section('content2')

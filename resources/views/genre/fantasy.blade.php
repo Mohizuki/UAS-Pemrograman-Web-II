@@ -26,7 +26,7 @@
 				<ul>
                     <li><a href="../">HOME</a></li>
 					<li><a href="../novel">NOVEL</a></li>
-					<li><a href="../genre">GENRE</a></li>
+					<li><a href="../genres">GENRE</a></li>
 					<li><a href="../popular">POPULAR</a></li>
 					<li><a href="../about">ABOUT</a></li>
 				</ul>
@@ -44,8 +44,8 @@
 			</div>
 		</div>
 		<div class="login">
-				<a href="../login.html"><img src="../images/personlogin.png" alt=""></a>
-			</div>
+			<a href="../profile"><img src="../images/santa.png" alt=""></a>
+		</div>
 	<div class="text-box">
 		<h1>Fantasy Genre</h1>
 	  <p>Fantasy novels are speculative fiction stories with imaginary characters <br> set in imaginary universes with mythology, folklore and Magic.</p>

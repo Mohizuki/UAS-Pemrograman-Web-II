@@ -13,7 +13,11 @@ class novelmodel extends Model
 
     protected $fillable = [
         'judul',
-        'genre',
         'desc_novel',
+        'id',
+    ];
+
+    protected $casts = [
+        'genre' => 'array'
     ];
 }

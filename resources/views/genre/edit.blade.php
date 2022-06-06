@@ -35,8 +35,8 @@
 						if(mysqli_num_rows($query_run) > 0){
 							foreach($query_run as $row){
 								?>
-									<input type="checkbox" id="fantasycheck" value="{{ $model->$row['genre'] }}" name="genre[]">
-  									<label for="Fantasycheck"><?php echo $row['genrename'];  ?></label>
+									<input type="checkbox" value="<?php echo $row['genrename'];  ?>" name="genre[]">
+  									<label ><?php echo $row['genrename'];  ?></label>
 								<?php
 							}
 						}

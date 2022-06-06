@@ -25,25 +25,35 @@ Route::get('/genre',[listgenrecontroller::class,'index']);
 
 
 //novel//
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/',function(){
+	if(!session()->has('user')){
+		return redirect('login');
+	}else{
+        return view('welcome');
+    }
 });
 
 
-Route::get('/novel', function () {
-    return view('novel');
+Route::get('/novel',function(){
+	if(!session()->has('user')){
+		return redirect('login');
+	}else{
+        return view('novel');
+    }
 });
 Route::get('/novel', [Novelcontroller::class, 'novel'])->name('novel_admin');
 
 Route::get('/genre', function () {
     return view('genre');
 });
-Route::get('/popular', function () {
-    return view('popular');
-});
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/about',function(){
+	if(!session()->has('user')){
+		return redirect('login');
+	}else{
+        return view('about');
+    }
 });
 
 Route::get('/login', function () {
@@ -70,12 +80,7 @@ Route::get('logout', function () {
     }
     return redirect('login');
 });
-
-Route::get('/',function(){
-	if(!session()->has('user')){
-		return redirect('login');
-	}
-}); 
+ 
 Route::get('popular',function(){
 	if(!session()->has('user')){
 		return redirect('login');
@@ -86,18 +91,28 @@ Route::get('popular',function(){
 Route::get('genres',function(){
 	if(!session()->has('user')){
 		return redirect('login');
+	}else{
+		return view('genres');
 	}
-}); 
-Route::get('about',function(){
-	if(!session()->has('user')){
-		return redirect('login');
-	}
+
 }); 
 
 Route::get('/login',function(){
 	if(session()->has('user')){
 		return redirect('/');
 	}
+    else{
+        return view('login.login');
+    }
+}); 
+
+Route::get('/profile',function(){
+	if(!session()->has('user')){
+		return redirect('login');
+	}
+    else{
+        return view('logout.profile');
+    }
 }); 
 
 Route::get('/genre/create', [Novelcontroller::class, 'create'])->name('create-genre');

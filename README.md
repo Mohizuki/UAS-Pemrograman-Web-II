@@ -16,3 +16,4 @@
 
 ## Referensi
 Disini kami menggunakan PHP framework yaitu laravel dan Framework CSS bootstrap
+<p style="font-size:18px;">untuk referensi sendiri kami menggunakan tutorial-tutorial di youtube misalnya untuk template saya menggunakan tutorial pada <a href="https://youtu.be/oYRda7UtuhA">video tutorial template ini</a> dan serta menjadikan website orang menjadi referensi dalam pengerjaan,			Selanjutnya, untuk beberapa tombol memang saya menggunakan beberapa bootstrap, untuk sisanya yg saya coba desain di crud.css, login.css, dan style.css, untuk profile.css sendiri saya menggunakan referensi di internet yaitu di https://codepen.io		</p>

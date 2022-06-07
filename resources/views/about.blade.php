@@ -61,7 +61,8 @@
 			Selanjutnya, untuk beberapa tombol memang saya menggunakan beberapa bootstrap, untuk sisanya yg saya coba desain di crud.css, login.css, dan style.css, untuk profile.css sendiri saya menggunakan referensi di internet yaitu di <a href="
 	https://codepen.io">website ini </a>
 		</p>
-
+        
+        <p>untuk framework sendiri kami menggunakan framework php yaitu laravel dan framework css bootstrap</p>
 
 	</section>
 	<!---- bawahcon section / content 2---->

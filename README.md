@@ -9,8 +9,6 @@
 </p>
 
 ## Contributor
-- Muhammad Fadillah Hassan (2010817110005)
-- Muhammad Naufal Furqan (2010817210011)
 <p><em>We both are student from <a href="https://ulm.ac.id/id/">University of Lambung Mangkurat</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"> 
 </em></p>
 
